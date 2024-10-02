@@ -2,7 +2,8 @@
 add_executable(lab4
     fifo.c
     signal.c
-    test_signal.c
+    # test_signal.c
+    test_fifo.c
 )
 
 # pico_set_program_name(lab4 "test")

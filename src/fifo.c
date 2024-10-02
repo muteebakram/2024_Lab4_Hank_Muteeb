@@ -8,7 +8,8 @@
 
 void fifo_worker_handler(QueueHandle_t requests, QueueHandle_t results, int id)
 {
-    while (1) {
+    while (1)
+    {
         struct request_msg data = {};
         xQueueReceive(requests, &data, portMAX_DELAY);
         data.output = data.input + 5;
